@@ -55,7 +55,14 @@
             foreach ($images as $key => $value) { ?>
                 <li id="image_li_<?php echo $value['id']; ?>" class="ui-sortable-handle">
                     <?php 
-                        echo "<img src=\"/img/$value->path\" style=\"width: 180px; height: 100px;\">";
+                        // $ext = explode(".", strtolower($value->path));
+                        // $ext_images = array('jpg', 'jpeg', 'png', 'gif');
+                        // $ext_videos = array('mp4', 'avi', 'ogg');
+                        // if (in_array($ext, $ext_images)) { // c'est une image
+                            echo "<img src=\"/img/$value->path\" style=\"width: 180px; height: 100px;\">";
+                        // } else if (in_array($ext, $ext_videos)) {  // c'est un video
+                        //     echo "<video width=\"320\" height=\"240\" controls><source src=\"/img/$value->path\"></video>";
+                        // }
                     ?> 
                 </li>         
             <?php } ?>
