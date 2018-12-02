@@ -62,7 +62,7 @@
     <div style="float: right;">
         <?php echo $this->Html->link(
             'RE-ORDER RESSOURCE',
-            '/img/shuffle_reorder/index.php',
+            '/images/order',
             ['class' => 'button']
                 ); 
         ?>
