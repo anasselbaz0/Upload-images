@@ -9,11 +9,11 @@
 <script type="text/javascript" src="js/jquery-ui.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('.reorder_link').on('click',function(){
+		$('#save').on('click',function(){
 			$("ul.reorder-photos-list").sortable({ tolerance: 'pointer' });
 			$('#reorder-details').slideDown('slow');
-			$('.reorder_link').html('save shuffled image');
-			$('.reorder_link').attr("id","save");
+			$('.#save').html('save shuffled image');
+			$('.#save').attr("id","save");
 			$('.image_link').attr("href","javascript:void(0);");
 			$('.image_link').css("cursor","move");
 			$("#save").click(function( e ){
@@ -40,7 +40,6 @@
 	});
 </script>
 
-
 <nav class="large-1 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -49,9 +48,10 @@
 </nav>
 
 <div class="images form large-11 medium-8 columns content">
-	    <legend><?= __('Re-Order your Ressources') ?></legend>
-	    <h3>Orderring</h3>
-	    <p>Set which one you woul like to start with in your ressources that you want to turn into a video.</p>
+
+    <legend><?= __('REORDER YOUR RESSOURCES') ?></legend>
+    <h3>Orderring</h3>
+    <p>Set which one you woul like to start with in your ressources that you want to turn into a video.</p>
 	    
 	<div style="margin-top:50px;">
 	<a href="javascript:void(0);" class="btn outlined mleft_no reorder_link" id="save">SHUFFLE & REORDER PHOTOS</a>
@@ -69,6 +69,7 @@
 			</ul>
 		</div>
 	</div>
+
 	<div id="reorder-details" class="light_box" style="display:none;">DRAG PHOTOS TO SHUFFLE & REORDER THE POSITION & SAVE IF FINISH</div>
 
 </div>
