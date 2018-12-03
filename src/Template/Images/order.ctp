@@ -17,6 +17,7 @@
         margin: 5px;
         padding: 5px 60px;
         font-size: 1.2em; 
+        display: inline-block;
       }
       .ui-state-highlight { 
         height: 110px; 
